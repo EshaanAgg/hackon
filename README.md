@@ -24,6 +24,22 @@ Both the clients call the uniformly developed central backend API, which first c
 
 ## Technologies Used
 
+#### 1. Backend Model - Holo:
+   - Holo provides personalized recommendations for user Eshaan based on search, movie streaming, and music history.
+   - Utilizes historical data to generate tailored textual responses and choices.
+
+#### 2. NLP Processor - OpenAI:
+   - OpenAI enhances decision-making by analyzing user queries and determining recommendation types.
+   - Acts as a thin wrapper over Holo, integrating seamlessly for a responsive user experience.
+
+#### 3. Web UI - Python with Chainlit:
+   - Python with Chainlit framework powers the web UI for interactive user interfaces.
+   - Enables easy integration with backend services for fetching and displaying recommendations.
+
+#### 4. Mobile App - Flutter:
+   - Flutter framework for cross-platform Android and iOS app development.
+   - Leverages Flutter's widget set for a consistent UI, integrates with OpenAI for NLP processing.
+
 ## Holo: ML Documentation
 
 ### Datasets:
@@ -76,3 +92,4 @@ It identifies products the user has not rated and sorts them by predicted rating
 * `Decoupled Recommendation Logic:` The model-based approach allows for decoupling the recommendation logic from the user interface, which is consistent with the proposed solution's strategy of separating the client interface from recommendation algorithms.
 * `User-Initiated Actions:` While the model primarily provides personalised recommendations, it can also align with the solution's goal of reducing the need for user-initiated actions. By proactively suggesting relevant products, it initiates interactions.
 * `Real-time Interaction:` By efficiently calculating recommendations based on user behaviour and preferences, this model supports the real-time interaction aspect of the solution, offering dynamic and relevant product suggestions.
+
