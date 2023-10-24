@@ -24,4 +24,20 @@ Both the clients call the uniformly developed central backend API, which first c
 
 ## Technologies Used
 
-## Holo: ML Documentation
+#### 1. Backend Model - Holo:
+   - Holo provides personalized recommendations for user Eshaan based on search, movie streaming, and music history.
+   - Utilizes historical data to generate tailored textual responses and choices.
+
+#### 2. NLP Processor - OpenAI:
+   - OpenAI enhances decision-making by analyzing user queries and determining recommendation types.
+   - Acts as a thin wrapper over Holo, integrating seamlessly for a responsive user experience.
+
+#### 3. Web UI - Python with Chainlit:
+   - Python with Chainlit framework powers the web UI for interactive user interfaces.
+   - Enables easy integration with backend services for fetching and displaying recommendations.
+
+#### 4. Mobile App - Flutter:
+   - Flutter framework for cross-platform Android and iOS app development.
+   - Leverages Flutter's widget set for a consistent UI, integrates with OpenAI for NLP processing.
+
+
