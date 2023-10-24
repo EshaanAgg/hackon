@@ -1,1 +1,0 @@
-# Holo Assistant App
